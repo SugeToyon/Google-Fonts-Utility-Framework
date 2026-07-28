@@ -19,7 +19,7 @@ index.html - Framework'ün nasıl kullanıldığını gösteren örnek arayüz
 2. my-fonts-utility.css dosyasını kendi HTML dosyanızın head kısmına dahil edin:
    <link rel="stylesheet" href="my-fonts-utility.css">
 3. İstediğiniz elementi class="font-[font-adi]" şeklinde dilediğiniz fontla özelleştirin:
-   "<h1 class="font-poppins">Bu metin Poppins fontuyla yazıldı!</h1>"
+   <<h1 class="font-poppins">Bu metin Poppins fontuyla yazıldı!</h1>>
 
 ## Lisans
 Bu proje tamamen açık kaynaklıdır ve dilediğiniz gibi geliştirip projelerinizde kullanabilirsiniz.
