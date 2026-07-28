@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fonts Utility Framework</title>
+    
+    <link rel="stylesheet" href="my-fonts-utility.css">
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #090d16;
+            color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: #38bdf8;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        
+        .font-card {
+            background: #111827;
+            border: 1px solid #1f2937;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .font-card:hover {
+            transform: translateY(-3px);
+            border-color: #38bdf8;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .card-meta code {
+            background: #1e293b;
+            color: #38bdf8;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.8rem;
+            text-transform: none;
+        }
+
+        .preview-title {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            color: #f8fafc;
+        }
+
+        .preview-text {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="font-jakarta fw-extrabold">Custom Font Utility Framework</h1>
+            <p class="font-inter">Bootstrap ve Tailwind tarzı sınıf tabanlı mimariyle, projelerinize binlerce Google Font'unu anında ve zahmetsizce entegre edin.</p>
+        </header>
+
+        <div class="grid">
+
+            <div class="font-card">
+                <div class="card-meta">
+                    <span>Modern / Geometric</span>
+                    <code>class="font-poppins"</code>
+                </div>
+                <h2 class="font-poppins preview-title">Poppins Geometrik Tasarım</h2>
+                <p class="font-poppins preview-text">
+                    Modern web projelerinde, açılış sayfalarında ve kurumsal arayüzlerde kusursuz bir okunabilirlik sunan popüler sans-serif fontu.
+                </p>
+            </div>
+
+            <div class="font-card">
+                <div class="card-meta">
+                    <span>Editorial / Serif</span>
+                    <code>class="font-playfair"</code>
+                </div>
+                <h2 class="font-playfair preview-title">Playfair Display Başlık</h2>
+                <p class="font-lora preview-text italic">
+                    "Zarif ve editoryal projeler, blog yazıları ve çarpıcı alıntılar için kullanılan klasik serif dokunuşu..."
+                </p>
+            </div>
+
+            <div class="font-card">
+                <div class="card-meta">
+                    <span>Tech / Cyber Vibe</span>
+                    <code>class="font-space"</code>
+                </div>
+                <h2 class="font-space preview-title">Cyberpunk & Geliştirici Estetiği</h2>
+                <p class="font-space preview-text">
+                    Siber güvenlik projeleri, teknoloji blogları ve modern portfolyolar için tasarlanmış keskin ve gelecekçi hatlar.
+                </p>
+            </div>
+
+            <div class="font-card">
+                <div class="card-meta">
+                    <span>Monospace / Code</span>
+                    <code>class="font-fira-code"</code>
+                </div>
+                <h2 class="font-fira-code preview-title" style="font-size: 1.5rem; color: #10b981;">const framework = "Active";</h2>
+                <p class="font-fira-code preview-text">
+                    Yazılımcıların vazgeçilmezi olan, kod blokları ve terminal arayüzleri için optimize edilmiş monospace yapı.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
